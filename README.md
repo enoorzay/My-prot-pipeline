@@ -7,3 +7,5 @@ Run by driver.py, which calls the script in the appropriate order. blaster.py ->
 - table_extender.py uses seq.py's structures to read this table, add the final touches and outputs final table. 
 
 -seq.py contains a structure to hold each query sequence and the relevant data pertaining to it. A controller class is also defined that  makes it easy to manage and perform operations on these seq objects (as well as file io). This approach is used so that I can easily modify the capabilities of this program after basic database querying, corresponding to the current dataset and objective I have at hand.
+
+- A local go slim database is used to replace GO terms with GO-slim terms if possible. (GO-slim terms tend to lean less towards inaccuracy as they are more generalized.) 
